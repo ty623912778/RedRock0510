@@ -19,7 +19,7 @@
     NSDictionary *dic2;
     
 }
-@property(assign,nonatomic) BOOL nibsRegistered;
+//@property(assign,nonatomic) BOOL nibsRegistered;
 
 @end
 
@@ -29,7 +29,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _nibsRegistered=NO;
+   // _nibsRegistered=NO;
     _dataSource=[NSMutableArray new];
     self.tableView.rowHeight=400;
     NSURL *URL = [NSURL URLWithString:pictureUrl];
@@ -38,7 +38,7 @@
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request1 completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error == nil){
             NSMutableDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-            
+          //  NSLog(@"%@",dic);
             _dataSource = [dic objectForKey:@"comments"];
             [self.tableView reloadData];
             
@@ -47,7 +47,7 @@
     }];
     [task resume];
     
-    [[NSBundle mainBundle] loadNibNamed:@"PictureTableViewCell" owner:self options:nil];
+  //  [[NSBundle mainBundle] loadNibNamed:@"PictureTableViewCell" owner:self options:nil];
     
 }
 
@@ -75,6 +75,7 @@
     cell.dianzan.text = dic2[@"vote_positive"];
     cell.chaping.text = dic2[@"vote_negative"];
     cell.textContent.text = dic2[@"comment_reply_ID"];
+    NSLog(@"%@",dic2);
     
     return cell;
     

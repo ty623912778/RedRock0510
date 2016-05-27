@@ -36,7 +36,6 @@
 		04F1E1651CE600ED0027552D /* girlDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F1E1641CE600ED0027552D /* girlDetail.m */; };
 		04F1E1671CE6010B0027552D /* girlDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04F1E1661CE6010B0027552D /* girlDetail.xib */; };
 		04F1E1691CE6071B0027552D /* 11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04F1E1681CE6071B0027552D /* 11.jpg */; };
-		04F1E16B1CE6248F0027552D /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 04F1E16A1CE6248F0027552D /* apple.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +103,6 @@
 		04F1E1641CE600ED0027552D /* girlDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = girlDetail.m; sourceTree = "<group>"; };
 		04F1E1661CE6010B0027552D /* girlDetail.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = girlDetail.xib; path = ../../girlDetail.xib; sourceTree = "<group>"; };
 		04F1E1681CE6071B0027552D /* 11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11.jpg; sourceTree = "<group>"; };
-		04F1E16A1CE6248F0027552D /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,7 +254,6 @@
 				04C47AAE1CE364D000A49376 /* AppDelegate.h */,
 				04C47AAF1CE364D000A49376 /* AppDelegate.m */,
 				04C47AB01CE364D000A49376 /* Assets.xcassets */,
-				04F1E16A1CE6248F0027552D /* apple.png */,
 				04C47AE61CE4BDB600A49376 /* info.plist */,
 				04C47A9A1CE3647B00A49376 /* Info.plist */,
 				04C47A9D1CE364C600A49376 /* main.m */,
@@ -420,7 +417,6 @@
 				04C47A8B1CE3644700A49376 /* PictureTableViewCell.xib in Resources */,
 				04C47A861CE3644700A49376 /* Body.storyboard in Resources */,
 				04F1E1671CE6010B0027552D /* girlDetail.xib in Resources */,
-				04F1E16B1CE6248F0027552D /* apple.png in Resources */,
 				04C47A8E1CE3644700A49376 /* TableViewCell1.xib in Resources */,
 				04C47AA71CE364C600A49376 /* LaunchScreen.storyboard in Resources */,
 				04C47A9B1CE3647B00A49376 /* Info.plist in Resources */,

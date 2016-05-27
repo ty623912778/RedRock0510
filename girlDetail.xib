@@ -11,24 +11,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVb-Zv-cQt">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVb-Zv-cQt">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zkB-r7-RMe">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zkB-r7-RMe">
                             <rect key="frame" x="0.0" y="41" width="375" height="626"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="626" id="zrH-9k-VNv"/>
+                            </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr0-vJ-BHu">
-                            <rect key="frame" x="10" y="8" width="42" height="30"/>
-                            <state key="normal" title="return"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr0-vJ-BHu">
+                            <rect key="frame" x="173" y="8" width="30" height="30"/>
+                            <state key="normal" title="返回"/>
                             <connections>
                                 <action selector="TYCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="Nbb-DK-5rJ"/>
                             </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fr0-vJ-BHu" firstAttribute="centerX" secondItem="zkB-r7-RMe" secondAttribute="centerX" id="CgE-Uo-fC3"/>
+                        <constraint firstAttribute="trailing" secondItem="zkB-r7-RMe" secondAttribute="trailing" id="EQd-NE-hvT"/>
+                        <constraint firstItem="zkB-r7-RMe" firstAttribute="leading" secondItem="EVb-Zv-cQt" secondAttribute="leading" id="F8Q-YL-skW"/>
+                        <constraint firstItem="zkB-r7-RMe" firstAttribute="top" secondItem="fr0-vJ-BHu" secondAttribute="bottom" constant="3" id="Lhm-mO-TVo"/>
+                        <constraint firstAttribute="bottom" secondItem="zkB-r7-RMe" secondAttribute="bottom" id="Wmg-G0-zvY"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EVb-Zv-cQt" secondAttribute="trailing" id="9FU-xA-st1"/>
+                <constraint firstItem="EVb-Zv-cQt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Frw-Fw-qUN"/>
+                <constraint firstAttribute="bottom" secondItem="EVb-Zv-cQt" secondAttribute="bottom" id="KMG-P1-G0Z"/>
+                <constraint firstItem="EVb-Zv-cQt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gZl-Hs-XLH"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="girlPicture" destination="zkB-r7-RMe" id="0Qp-8A-8lT"/>

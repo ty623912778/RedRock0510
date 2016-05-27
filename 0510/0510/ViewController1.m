@@ -48,7 +48,6 @@
     }];
     [task resume];
     
-    [[NSBundle mainBundle] loadNibNamed:@"TableViewCell1" owner:self options:nil];
     
 }
 
@@ -87,12 +86,18 @@
 {
     storyDetail *detail = [storyDetail creatXib];
     detail.listDictionary = dic2;
-    detail.username.text = dic2[@"comment_author"];
+    
+    detail.username.text =dic2[@"comment_author"];
+    
+    
     detail.time.text =dic2[@"comment_date"];
     detail.content.text = dic2[@"comment_content"];
     detail.dianzan.text = dic2[@"vote_positive"];
     detail.chaping.text = dic2[@"vote_negative"];
     detail.tucao.text = dic2[@"text_content"];
+    
+    
+
   //  NSLog(@"点击%@",indexPath);
     
     [detail show];

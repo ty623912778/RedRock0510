@@ -11,32 +11,40 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KSB-xA-b3s">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSB-xA-b3s">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLh-DS-24X">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLh-DS-24X">
                             <rect key="frame" x="24" y="184" width="51" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="4rK-mX-a6u"/>
+                                <constraint firstAttribute="height" constant="21" id="ktO-oV-RlB"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-yP-e8x">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-yP-e8x">
                             <rect key="frame" x="24" y="238" width="51" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="LEX-VI-Yl7"/>
+                                <constraint firstAttribute="width" constant="51" id="Uf6-hq-lcV"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-z1-tNC">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入账号" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ThS-z1-tNC">
                             <rect key="frame" x="107" y="181" width="187" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-TZ-LRs">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v4x-TZ-LRs">
                             <rect key="frame" x="104" y="234" width="193" height="30"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAf-rq-GDX">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iAf-rq-GDX">
                             <rect key="frame" x="166" y="456" width="30" height="30"/>
                             <state key="normal" title="登陆"/>
                             <connections>
@@ -44,7 +52,7 @@
                                 <action selector="login:" destination="iN0-l3-epB" eventType="touchUpInside" id="1gm-pb-YqY"/>
                             </connections>
                         </button>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-t5-QRY">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2z-t5-QRY">
                             <rect key="frame" x="24" y="345" width="146" height="45"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="记住密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9QT-pZ-idU">
@@ -62,7 +70,7 @@
                             </subviews>
                             <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </view>
-                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-KJ-jr8">
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m0w-KJ-jr8">
                             <rect key="frame" x="191" y="345" width="159" height="45"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="自动登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogO-Zp-xAt">
@@ -82,9 +90,37 @@
                         </view>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="ThS-z1-tNC" firstAttribute="leading" secondItem="fLh-DS-24X" secondAttribute="trailing" constant="32" id="0yE-X7-NhK"/>
+                        <constraint firstItem="v4x-TZ-LRs" firstAttribute="centerY" secondItem="fOb-yP-e8x" secondAttribute="centerY" id="1Xa-t0-gD0"/>
+                        <constraint firstItem="m0w-KJ-jr8" firstAttribute="bottom" secondItem="N2z-t5-QRY" secondAttribute="bottom" id="1Xm-m9-jgx"/>
+                        <constraint firstItem="v4x-TZ-LRs" firstAttribute="top" secondItem="KSB-xA-b3s" secondAttribute="top" constant="234" id="1oW-wG-Mgp"/>
+                        <constraint firstItem="m0w-KJ-jr8" firstAttribute="leading" secondItem="KSB-xA-b3s" secondAttribute="leading" constant="191" id="61B-gI-6mv"/>
+                        <constraint firstItem="v4x-TZ-LRs" firstAttribute="leading" secondItem="fOb-yP-e8x" secondAttribute="trailing" constant="29" id="6GN-Cr-28I"/>
+                        <constraint firstItem="m0w-KJ-jr8" firstAttribute="leading" secondItem="N2z-t5-QRY" secondAttribute="trailing" constant="21" id="BNi-JS-XtI"/>
+                        <constraint firstItem="v4x-TZ-LRs" firstAttribute="centerX" secondItem="ThS-z1-tNC" secondAttribute="centerX" id="I2P-bt-zzD"/>
+                        <constraint firstItem="iAf-rq-GDX" firstAttribute="top" secondItem="m0w-KJ-jr8" secondAttribute="bottom" constant="66" id="LHR-Sr-9wY"/>
+                        <constraint firstItem="fLh-DS-24X" firstAttribute="baseline" secondItem="ThS-z1-tNC" secondAttribute="baseline" id="MF1-9y-AbD"/>
+                        <constraint firstItem="fLh-DS-24X" firstAttribute="leading" secondItem="KSB-xA-b3s" secondAttribute="leading" constant="24" id="Nw8-em-YUp"/>
+                        <constraint firstItem="m0w-KJ-jr8" firstAttribute="top" secondItem="v4x-TZ-LRs" secondAttribute="bottom" constant="81" id="bCb-Nl-5MD"/>
+                        <constraint firstAttribute="trailing" secondItem="m0w-KJ-jr8" secondAttribute="trailing" constant="25" id="dns-Zt-EIG"/>
+                        <constraint firstItem="v4x-TZ-LRs" firstAttribute="top" secondItem="ThS-z1-tNC" secondAttribute="bottom" constant="23" id="ebo-Qe-pSq"/>
+                        <constraint firstAttribute="trailing" secondItem="v4x-TZ-LRs" secondAttribute="trailing" constant="78" id="guW-Zb-NLv"/>
+                        <constraint firstItem="fLh-DS-24X" firstAttribute="leading" secondItem="N2z-t5-QRY" secondAttribute="leading" id="ids-3z-GKJ"/>
+                        <constraint firstItem="fOb-yP-e8x" firstAttribute="leading" secondItem="KSB-xA-b3s" secondAttribute="leading" constant="24" id="jDS-PZ-Sox"/>
+                        <constraint firstItem="iAf-rq-GDX" firstAttribute="leading" secondItem="KSB-xA-b3s" secondAttribute="leading" constant="166" id="p3g-PH-4PO"/>
+                        <constraint firstItem="m0w-KJ-jr8" firstAttribute="top" secondItem="N2z-t5-QRY" secondAttribute="top" id="vqk-hv-F11"/>
+                        <constraint firstAttribute="bottom" secondItem="m0w-KJ-jr8" secondAttribute="bottom" constant="277" id="zd8-8G-fBs"/>
+                    </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KSB-xA-b3s" secondAttribute="trailing" id="Bwt-cP-t9w"/>
+                <constraint firstAttribute="bottom" secondItem="KSB-xA-b3s" secondAttribute="bottom" id="TKu-KG-os2"/>
+                <constraint firstItem="KSB-xA-b3s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lcC-k1-gRM"/>
+                <constraint firstItem="KSB-xA-b3s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="lp4-zS-pKB"/>
+            </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
                 <outlet property="LoginView" destination="KSB-xA-b3s" id="HUS-Eo-SgK"/>

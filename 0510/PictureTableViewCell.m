@@ -18,6 +18,8 @@
 @synthesize vote_negative;
 @synthesize comment_reply_ID;
 
+
+
 - (void)setPics:(NSString *)picture
 {
     if (![picture isEqualToString:pics]) {
